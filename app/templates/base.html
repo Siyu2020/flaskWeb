@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - sipLogger</title>
+        {% else %}
+        <title>Welcome to sipLogger!</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>sipLogger: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
+
